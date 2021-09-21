@@ -1,0 +1,152 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+*{
+	font-family: sans-serif;
+}
+body{
+	overflow: auto;
+	padding-top: 70px;
+	box-sizing: border-box;            
+}
+.sideimg{
+	position: fixed;
+	top: 60px;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/petpeaker-4a4fa.appspot.com/o/joinus.jpg?alt=media&token=11165fa0-29d8-4c72-a5be-e59f53dfc97e');
+	background-position: center;
+	background-size: cover;
+}
+.timeline{
+	display: flex;
+	width: 80%;
+	margin: auto;            
+	justify-content:space-around;
+	align-items: center;
+	position: relative;
+}
+.forminner{
+	padding: 10px;
+	width: 100%;
+	position:relative;
+}
+.timeline .step{
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: red;
+	border-radius: 50%;
+	color: white;
+	z-index: 1;
+}
+.timeline .pbar{
+	height: 15%;background-color: #80808075;width: 100%;position: absolute;top: 50%;            
+}
+.timeline .pbar div{background-color: red;width: 0%;height: 100%;transition: 1s ease-in-out;}
+input,select{
+	border: 0;
+	border-bottom: 1px solid;
+	padding: 5px;
+	width: 100%;
+	margin-top: 15px;
+	text-align-last: center;
+	font-size: 15px;
+	outline: none;
+	display: block;
+	box-sizing: border-box;
+	background:transparent
+}
+button{
+	border: 0;
+	background-color: blue;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	border-radius: 0.5em;
+	font-size: 15px;
+	cursor: pointer;
+	outline: none;
+}
+button:disabled{
+	background-color: #3f3fe6;
+}
+form .error{text-align: right;}
+form .error span{font-size: 10pt;color: red;}
+option{
+	text-align: center;
+}
+form{
+	width: 100%;justify-content: center;display: none;
+}
+form .labels{
+line-height: 30px;margin-left: 10px;margin-right: 10px;            
+}
+form .inputs{
+	margin-left: 10px;margin-right: 10px;width: 50%;            
+}
+input:disabled{
+	background-color: transparent;
+}
+.formouter{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+label{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 11pt;
+}
+form .element{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}       
+.formouterbox{
+	height: 100%;
+	width: 60%;
+	box-sizing: border-box;
+	padding: 30px;            
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}        
+.lds-hourglass {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-hourglass:after {
+	content: " ";
+	display: block;
+	border-radius: 50%;
+	width: 0;
+	height: 0;
+	margin: 8px;
+	box-sizing: border-box;
+	border: 32px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+	}
+}
+#spinner{
+	position: fixed;top: 0;width: 100%;height: 100%;background-color: #000000c9;display: flex;justify-content: center;align-items: center;z-index: 2;	
+}

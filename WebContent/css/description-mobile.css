@@ -1,0 +1,31 @@
+*{font-family:sans-serif}
+html,body{
+	height:100%;
+	margin:0
+}
+body{
+	padding-top: 60px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+.fbutton{
+	margin-right:10px;display:inline-block;background: transparent;color: blue;border: 1px solid;padding: 5px;font-size: 15px;cursor:pointer;text-transform:capitalize
+}
+.purchase{
+	font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 0;
+    background-color: blue;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid;
+    width: 100%;
+}
+.purchase:disabled{
+	background-color:#0000ff94;
+}
+.fbutton:hover{
+	color:red
+}

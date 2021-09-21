@@ -1,0 +1,86 @@
+nav a{
+	margin: 10px;
+	text-decoration:none;
+	color:black;
+}        
+nav .brand h1{
+	margin:0;
+}
+.sidenavbar-header a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.navbar-mobile div{
+	height:2px;
+	width:25px;
+	background-color:black;
+	margin:2px
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	background-color:white;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+    box-shadow:0px 0px 5px 2px #b1b1b1;	
+}
+nav a:hover{
+	color: palevioletred;
+	cursor: pointer;
+}
+.navbar{
+	display: flex;                
+	align-items:center;
+}
+.sidenavbar-container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #00000091;
+}
+.sidenavbar{
+	width: 0%;left:0;height: 100%;position: fixed;z-index: 2;top: 0px;background: white;overflow-x: hidden;overflow-y: auto;transition: 0.5s ease-in-out;word-break: keep-all;white-space: nowrap;
+}
+.sidenavbar-header{
+    padding: 10px;
+    background-color: rebeccapurple;	
+}
+.sidenavbar-header a{
+	word-break:break-word;   
+}
+.sidenavbar-body a{
+	margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #00000054;
+    line-height: 30px;
+}
+.services{
+	line-height: 35px;font-size: 16px;position: fixed;left: 0;right: 0;bottom: 0;background-color: white;z-index: 4;height: 0;overflow: hidden;transition: 0.6s ease-in-out;
+}
+.services-body{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.services a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 17px;
+}

@@ -1,0 +1,124 @@
+nav{
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:2;
+	box-shadow:0 0 5px 0 #a5a5a5;
+}
+nav .wrapper{
+	background:white;
+	color:black;
+	width:100%;
+	padding:0px 30px;
+	height:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	box-sizing:border-box;
+}
+nav .nav-links{
+	display:inline-flex;
+	margin:20px 0px;
+}
+nav .nav-links{
+	font-size:16px;
+}
+nav .nav-links li{
+	list-style:none;
+	padding:0 20px;	
+	border:0;
+}
+nav .nav-links li a{
+	color:black;
+	text-decoration:none;
+}
+nav .nav-links li a:hover{
+	color:#ff5722;
+}
+nav .drop-menu{
+    position: absolute;
+    top: 65%;
+	padding-top:20px;    
+    line-height: 40px;
+    margin-left: -5%;
+    visibility: hidden;
+}
+.mega-links li{
+	padding:0px
+}
+.drop-menu li{
+	margin: 5px 0px;
+}
+nav .drop-menu a:hover{
+	color:pink;
+}
+.nav-links li:hover .drop-menu{
+	visibility:visible;
+}
+nav .drop-menu li{
+	padding:10px 20px;
+	margin:0px;
+	
+}
+nav .mega-box{
+	position: absolute;
+    top: 65%;
+    width: 65%;
+    right: 8%;
+    white-space: nowrap;
+   	visibility:hidden;
+   	padding-top:20px;
+}
+.mega-box .mcontent{
+	background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow:0px ​6px 5px -2px #adadad;
+    padding: 20px 0;
+}
+.mega-box header{
+	font-size:20px
+}
+.mega-box .mega-links{
+	font-size:15px
+}
+.mega-box .mega-links{
+	padding: 5px;
+    line-height: 40px;
+}
+.mega-box ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.mega-box ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.mega-box ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.mega-box ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.mega-box .row{
+	padding:0px 8%;
+	height: 300px;
+    overflow: auto;
+}
+.mega-box .row:nth-child(1){
+	border-right:1px solid #d4d4d4;
+}
+.mega-box .row:nth-child(2){
+	border-right:1px solid #d4d4d4;
+}
+nav .mega-links li{
+	padding:0
+}
+.nav-links li:hover .mega-box{
+	visibility:visible;
+}
