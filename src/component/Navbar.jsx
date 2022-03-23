@@ -11,7 +11,6 @@ export default class Navbar extends Component {
       options:[
         {name:"Home",link:"/"},
         {name:"Shop",link:"/shop"},
-        {name:"Own a pet",link:"/ownapet"},
       ],
       islogin:false
     }
