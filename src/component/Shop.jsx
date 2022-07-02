@@ -37,7 +37,6 @@ class Shop extends Component {
         this.setState({products:{curr:{...this.state.products.prev},prev:[]}})
     }
   render() {
-
     return (
       <>
         <div className='d-flex p-3' style={{minHeight:"62vh"}}>
@@ -126,7 +125,7 @@ class Shop extends Component {
                                 eles.push(
                                     <div key={i} className="d-flex w-100 m-auto border-bottom pb-3 pt-3">
                                         <div className="d-flex align-items-center justify-content-center">
-                                            <img style={{width:"150px"}} src={product.thumbnail} alt='' />
+                                            <img style={{width:"200px"}} src={product.thumbnail} alt='' />
                                         </div>
                                         <div className='desktop w-100'>
                                         <div className="w-100 d-flex justify-content-between ps-3 pe-3 w-100">

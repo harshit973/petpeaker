@@ -6,8 +6,8 @@ export default class Footer extends Component {
     return (
         <>
             <div className='flex-grow-1'></div>
-            <div className="footer bg-dark text-light overflow-auto d-flex flex-wrap justify-content-evenly">
-            <div style={{marginTop: "20px",marginBottom: "20px"}}>
+            <div className="footer bg-dark text-light overflow-auto d-flex flex-wrap justify-content-between ps-4 pe-4">
+            <div style={{marginTop: "20px",marginBottom: "20px",minWidth:"200px"}}>
             <h2>Follow Us </h2>
             <div style={{marginTop: "15px",marginBottom: "15px",lineHeight: "24px",fontSize: "15px"}}>
             <p>Twitter</p>
@@ -16,7 +16,7 @@ export default class Footer extends Component {
             <p>Youtube</p>
             </div>
             </div>
-            <div style={{marginTop:"20px",marginBottom:"20px"}}>
+            <div style={{marginTop:"20px",marginBottom:"20px",minWidth:"200px"}}>
             <h2>Contact Us</h2>
             <div style={{marginTop: "15px",marginBottom: "15px",lineHeight: "24px",fontSize: "15px"}}>
                 <p>+91 7986111378</p>
@@ -24,7 +24,7 @@ export default class Footer extends Component {
                 <p>g-185 h.m.t pinjore</p>
             </div>    
             </div>
-            <div style={{marginTop: "20px",marginBottom: "20px"}}>
+            <div style={{marginTop: "20px",marginBottom: "20px",minWidth:"200px"}}>
                 <h2>Working Hours</h2>
                 <div style={{marginTop:"15px",marginBottom: "15px",lineHeight: "24px",fontSize: "15px"}}>
                     <p>Monday to Sunday</p>

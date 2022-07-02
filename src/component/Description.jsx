@@ -5,9 +5,6 @@ import {Tooltip} from "@mui/material"
 export default class Description extends Component {
   constructor(props){
         super(props)
-        this.state={
-
-        }
         getDoc(doc(db, "products",props.match.params.id)).then((res)=>{
             this.setState({...res.data()})
         })        
@@ -16,8 +13,8 @@ export default class Description extends Component {
   render() {
     return (
         <>
-            <div className='d-flex justify-content-around pt-4 pb-4'>
-              <div style={{maxWidth:"500px"}} className='d-block text-center  d-block'>
+            <div className='d-flex justify-content-around p-4 flex-wrap'>
+              <div style={{maxWidth:"500px"}} className='d-block text-center  d-block p-3'>
                 <img className='w-100 mb-2 mt-2' src={this.state.thumbnail} alt='' />
                 <Tooltip title="purchase service currently not available" arrow>
                   <button className='btn btn-primary'>Proceed to purchase</button>
@@ -30,7 +27,7 @@ export default class Description extends Component {
                 <p style={{paddingTop:" 0.5rem",paddingBottom:' 0.5rem',color:" #6c757d",textAlign:"left"}}>{"Description"}</p>
                 <p className='fs-6 m-0'>{this.state.description}</p>
                 <div className='mt-3 '>
-                  <p style={{paddingTop:" 0.5rem",paddingBottom:' 0.5rem',color:" #6c757d",textAlign:"left"}}>{"Highlights"}</p>
+                  <p style={{paddingTop:"0.5rem",paddingBottom:'0.5rem',color:"#6c757d",textAlign:"left"}}>{"Highlights"}</p>
                   <ul>
                     {
                       (()=>{
